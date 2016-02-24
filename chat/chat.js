@@ -6,7 +6,7 @@ $(function() {
 	//WebSocket 链接
 	if (typeof console == "undefined") {
 	    this.console = { 
-	    	log: function (msg) {
+	    		log: function (msg) {
 	    	} 
 	    };
 	}
