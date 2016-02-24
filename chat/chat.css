@@ -1,0 +1,55 @@
+
+/*布局样式*/
+#chat-left-side .panel {
+	width: 200px; margin-bottom: 10px;
+}
+#chat-select-channel {
+	margin-top: 10px;
+}
+#chat-left-side {
+	float: left;
+}
+#chat-room {
+	float: right;
+}
+#chat-room .panel {
+	width: 580px; margin-left: 5px; 
+}
+#chat-send {
+	clear: both;
+}
+
+/*对话框样式*/
+.speech_item img {
+	width: 30px; height: 30px; border-radius: 50%;
+}
+.speech_item {
+	margin: 8px 0px; padding: 0px 20px; overflow: hidden;
+}
+.chat-isMyself p {
+	text-align: right; padding-right: 5px;
+}
+.chat-isMyself .chat-imgWrap, .chat-isMyself .chat-nameWrap {
+	float: right;
+}
+.chat-nameWrap {
+	padding-top: 3px; padding-left: 10px;
+}
+.chat-nameWrap p {
+	margin-bottom: 2px;
+}
+.chat-imgWrap, .chat-nameWrap {
+	float: left;
+}
+.chat-talk-content {
+	margin: 8px 3px; background: #78cdf8; border-radius: 5px; margin-left: -10px;
+}
+.speech_item .chat-talk-content {
+	float: left; padding: 8px 20px 8px 10px;
+}
+.chat-isMyself.speech_item .chat-talk-content {
+	float: right; padding: 8px 10px 8px 20px;
+}
+
+
+

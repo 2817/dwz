@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="./chat/chat.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="chat-left-side">
+		<div class="panel" defH="100">
+			<h1>聊天频道</h1>
+			<div>
+				<div class="chat-channel">
+					<select name="chat-channel_1" id="chat-channel_1">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+					<select name="chat-channel_2" id="chat-channel_2">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+					<select name="chat-channel_3" id="chat-channel_3">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+					<select name="chat-channel_4" id="chat-channel_4">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+				<div class="chat-select-channel">
+					<button id="chat-select-channel" name="chat-select-channel">切换频道</button>
+					<button id="chat-dialog-close" name="chat-dialog-close">退出聊天</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel" defH="230">
+			<h1>在线聊天室</h1>
+			<div>
+				<ul class="tree treeFolder collapse">
+					<li><a href="#" target="navTab">在线人员</a>
+						<!-- 修改 id  -->
+						<ul id="chat-userlist">
+							<!-- <li><a href="#">张三</a></li>
+							<li><a href="#">李四</a></li>
+							<li><a href="#">王五</a></li>
+							<li><a href="#">张三</a></li>
+							<li><a href="#">李四</a></li> -->
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="chat-room">
+		<div class="panel" defH="380">
+			<h1>在线聊天室</h1>
+			<div id="chat-dialog">
+				
+			</div>
+		</div>
+	</div>
+	<div id="chat-send">
+		<div class="panel" defH="200">
+			<h1>在线聊天室</h1>
+			<div>
+				<form id="chat-form">
+					<textarea name="" id="textarea" cols="100" rows="6"></textarea>
+					<!-- 修改 id -->
+					<select name="" id="chat-client-list" style="position: relative; top: -5px;">
+						<option value="all" selected="selected">所有人</option>
+					</select>
+					<input type="button" name="submit" value="发送" id="chat-from-submit" style="position: relative; top: -5px;">
+				</from>
+			</div>
+		</div>
+	</div>
+	<!--关闭页面按钮-->
+	<button class="close" value="关闭" style="display: none;"></button>
+</body>
+<script type="text/javascript" src="./chat/web_socket.js"></script>
+<script type="text/javascript" src="./chat/swfobject.js"></script>
+<script type="text/javascript" src="./chat/chat.js"></script>
+</html>
